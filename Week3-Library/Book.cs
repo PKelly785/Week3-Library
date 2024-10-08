@@ -5,10 +5,33 @@ namespace Week3_Library
     class Book
     {
         // properties
-        string Title;
-        string Author;
-        string ISBN;
-        int Pages;
+       private string Title;
+       private string Author;
+       private string ISBN;
+       private int Pages;
+
+        // Title property to allow access 
+        // to the title private variable
+        public string title
+        {
+            get { return title; } // get method
+            set { title = value; } // set method
+        }
+        public string author
+        {
+            get { return author; }
+            set { author = value; }
+        }   
+        public string isbn
+        {
+            get { return isbn; }
+            set { isbn = value; }
+        }
+        public int pages
+        {
+            get { return pages; }
+            set { pages = value; }
+        }
 
         // Constructor for book object
         public Book(string bookTitle, string bookAuthor, string bookISBN, int bookPages)
