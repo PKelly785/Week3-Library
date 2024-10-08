@@ -22,7 +22,17 @@ class Program
         // Output book information to the console
         book.DisplayInfo();
         book2.DisplayInfo();
-        
+
+        // Create new instances of the Member class
+        // These new members are created using the
+        // Member constructor in the Members class
+        Members member = new Members(1, "John Smith", "1 High Street", 0790090090);
+        Members member1 = new Members(2, "Mary Jones", "102 Garden Road", 0790345666);
+
+        Console.WriteLine("Current library members");
+        member.DisplayInfo();
+        member1.DisplayInfo();
+
 
 
     }
